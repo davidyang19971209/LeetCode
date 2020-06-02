@@ -13,7 +13,7 @@ public class MinStack {
     
     public void push(int x) {
     	s1.push(x);
-    	if(s2.isEmpty()||(!s2.isEmpty()&&s2.peek()>=x))
+    	if(s2.isEmpty()||s2.peek()>=x)
     	{
     		s2.push(x);
     	}
@@ -21,9 +21,7 @@ public class MinStack {
     }
     
     public void pop() {
-    	int temp = s1.pop();
-    	
-    	if(temp == s2.peek())
+    	if(s1.pop().equals(s2.peek()))
     		s2.pop();
     }
     
