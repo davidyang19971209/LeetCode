@@ -1,0 +1,10 @@
+package ¶ş²æÊ÷Ç°Ğò±éÀú;
+
+
+public class TreeNode {
+	 int val;
+	 TreeNode left;
+	 TreeNode right;
+	 TreeNode(int x) { val = x; }
+}
+
