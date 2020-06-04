@@ -20,12 +20,16 @@ public class Solution3 {
 			else
 			{
 				pre = curr.left;
-				curr = curr.right;
-			}
-			pre.right=cur;
+				while(pre.right!=null)
+				{
+					pre = pre.right;
+				}
+			
+			pre.right=curr;
 			TreeNode temp = curr;
 			curr = curr.left;
 			temp.left = null;
+			}
 		}
 		
 		return res;
