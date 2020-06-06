@@ -25,9 +25,9 @@ public class Solution3 {
 					pre = pre.right;
 				}
 			
-			pre.right=curr;
-			TreeNode temp = curr;
-			curr = curr.left;
+			pre.right=curr; 			//把current变为右子节点
+			TreeNode temp = curr;		//temp的目的是在进入左子树之后
+			curr = curr.left;			//将原curr的左子树置为null
 			temp.left = null;
 			}
 		}
