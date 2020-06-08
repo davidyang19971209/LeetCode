@@ -1,4 +1,8 @@
 package 二叉搜索树迭代器173;
+/*
+ * 栈模拟中序遍历
+ */
+
 
 import java.util.Stack;
 
