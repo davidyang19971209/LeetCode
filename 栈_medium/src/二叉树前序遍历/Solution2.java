@@ -6,7 +6,7 @@ public class Solution2 {
  public List<Integer> preorderTraversal(TreeNode root) {
         LinkedList<TreeNode> stack = new LinkedList<>();
         LinkedList<Integer> output = new LinkedList<>();
-
+        
         if(root == null)
         {
             return output;
